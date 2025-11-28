@@ -32,7 +32,7 @@ export default function About() {
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               I specialize in scalable application development, with proven expertise in microservices and micro 
-              frontend architecture. Well-versed in Agile methodologies, I'm dedicated to delivering high-quality 
+              frontend architecture. Well-versed in Agile methodologies, I&apos;m dedicated to delivering high-quality 
               solutions in retail and law domains.
             </p>
             <div className="mt-6 flex items-center space-x-4">

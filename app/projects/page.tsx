@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Projects() {
   const projects = [
     {
@@ -67,7 +65,7 @@ export default function Projects() {
           </h1>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A collection of projects I've worked on across different domains, showcasing my expertise in 
+            A collection of projects I&apos;ve worked on across different domains, showcasing my expertise in 
             full-stack development, microservices, and cloud technologies
           </p>
         </div>

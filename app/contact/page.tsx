@@ -34,7 +34,7 @@ export default function Contact() {
           </h1>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Have a question or want to work together? I'd love to hear from you!
+            Have a question or want to work together? I&apos;d love to hear from you!
           </p>
         </div>
 
