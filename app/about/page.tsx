@@ -1,4 +1,11 @@
+'use client';
+
+import Image from 'next/image';
+import { useState } from 'react';
+
 export default function About() {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <main className="min-h-screen pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -14,9 +21,20 @@ export default function About() {
           {/* Profile Image Section */}
           <div className="flex justify-center">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-green-600 shadow-xl">
-              <div className="w-full h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-6xl font-bold">
-                HSC
-              </div>
+              {!imageError ? (
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Harish Singh Chauhan"
+                  width={256}
+                  height={256}
+                  className="w-full h-full object-cover"
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-6xl font-bold">
+                  HSC
+                </div>
+              )}
             </div>
           </div>
 
